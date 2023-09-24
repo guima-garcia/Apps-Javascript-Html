@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <title>Aplicação 2</title>
+	<style>
+		body {
+			font-family: Arial;
+			text-align: center;
+		}
+
+        #janela {
+            width: 400px;
+            height: 700px;
+            background-color: #f0f0f0;
+            margin: 50px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #pokedex {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 300px;
+            height: 450px;
+            background-color: #ff0000;
+            margin: 0px auto;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #janelaPokedex {
+            width: 200px;
+            height: 200px;
+            background-color: #f0f0f0;
+            margin: 0px auto;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .textoBranco {
+            text-align: center;
+            color: white;
+        }
+
+		button {
+			padding: 10px 20px;
+			font-size: 16px;
+			margin: 10px;
+		}
+
+        #box0 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 180px;
+            height: 20px;
+            background-color: #333;
+            margin: 2.5px auto;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #box1 {
+            display: inline-block;
+        }
+        #box2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 20px;
+            background-color: #333;
+            margin: 2.5px auto;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+	</style>
+</head>
+<body>
+	<div id="janela">
+        <h1>Aplicação 2</h1>
+		<form>
+			Escolha um Pokémon:
+			<select id="mySelect">
+				<option>Bulbassauro</option>
+				<option>Charmander</option>
+				<option>Squirtle</option>
+				<option>Pikachu</option>
+			</select>
+			<br><br>
+			<input type="button" onclick="selecionarOpcao()" value="Pesquisar">
+		</form>
+        <br>
+        <div id="pokedex">
+            <h2 class="textoBranco">POKÉDEX</h2>
+            <div id="janelaPokedex">
+                <img id="myImage" src="assets/000.png" style="width: 200px"><br />
+            </div>
+            <br>
+            <div id="box0">
+                <p class="textoBranco" id="nome">Nome</p>
+            </div>
+            <div id="box1">
+                <div id="box2">
+                    <p class="textoBranco" id="numero">Nº</p>
+                </div>
+            </div>
+            <div id="box1">
+                <div id="box2">
+                    <p class="textoBranco" id="tipo">Tipo</p>
+                </div>
+            </div>
+            <div id="box1">
+                <div id="box2">
+                    <p class="textoBranco" id="altura">Altura</p>
+                </div>
+            </div>
+            <div id="box1">
+                <div id="box2">
+                    <p class="textoBranco" id="peso">Peso</p>
+                </div>
+            </div>
+        </div>
+        <br>
+		<button onclick="mostrarPagina(4)">Retornar</button>
+	</div>
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>

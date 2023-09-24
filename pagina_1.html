@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Aplicação 1</title>
+	<style>
+		body {
+			font-family: Arial;
+			text-align: center;
+		}
+
+        #janela {
+            width: 400px;
+            height: 480px;
+            background-color: #f0f0f0;
+            margin: 50px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+		button {
+			padding: 10px 20px;
+			font-size: 16px;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="janela">
+		<h1>Aplicação 1</h1>
+
+		<img id="myImage" src="assets/pic_bulboff.gif" style="width: 256px"><br />
+
+		<button onclick="document.getElementById('myImage').src='assets/pic_bulbon.gif'">Ligar</button>
+
+		<button onclick="document.getElementById('myImage').src='assets/pic_bulboff.gif'">Desligar</button><br>
+		<button onclick="mostrarPagina(4)">Retornar</button>
+	</div>
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>
